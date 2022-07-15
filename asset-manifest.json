@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/caspel-test-app/static/css/main.f1a036e6.css",
-    "main.js": "/caspel-test-app/static/js/main.0179cb05.js",
+    "main.js": "/caspel-test-app/static/js/main.670343b6.js",
     "static/js/787.28cb0dcd.chunk.js": "/caspel-test-app/static/js/787.28cb0dcd.chunk.js",
     "index.html": "/caspel-test-app/index.html",
     "static/media/Logo.svg": "/caspel-test-app/static/media/Logo.e0c4942ca5adbf887c655ff518e437fd.svg",
     "main.f1a036e6.css.map": "/caspel-test-app/static/css/main.f1a036e6.css.map",
-    "main.0179cb05.js.map": "/caspel-test-app/static/js/main.0179cb05.js.map",
+    "main.670343b6.js.map": "/caspel-test-app/static/js/main.670343b6.js.map",
     "787.28cb0dcd.chunk.js.map": "/caspel-test-app/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f1a036e6.css",
-    "static/js/main.0179cb05.js"
+    "static/js/main.670343b6.js"
   ]
 }
