@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://anastasia-kot.github.io/jupiter-test-website",
+  "homepage": "https://anastasia-kot.github.io/caspel-test-app",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
@@ -20,7 +20,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build -r https://github.com/Anastasia-kot/jupiter-test-website.git",
+    "deploy": "gh-pages -b gh-pages -d build -r https://github.com/Anastasia-kot/caspel-test-app.git",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

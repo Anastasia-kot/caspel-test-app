@@ -46,6 +46,8 @@ const CardsOfGoods = (props) => {
                     setTimeout(() => {
 
                         props.setFilteredData(values.keyWord)
+                        props.setCurrentPage(1)
+
 
                         setSubmitting(false);
                     }, 400);

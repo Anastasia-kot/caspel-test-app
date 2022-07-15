@@ -40,8 +40,12 @@ const ContentNavbar = (props) => {
                 {props.editModePaginationSize &&
                 <select className={styles.selectWrapper}
                     name="paginationSizeSelect" 
-                    onChange={(e) => {setPaginationSizeOnClick(e.target.value);
-                       setEditModePaginationSizeOnClick()}
+                    onChange={(e) => {
+                        setPaginationSizeOnClick(e.target.value);
+                        setEditModePaginationSizeOnClick();
+                        setCurrentPageOnClick(1);
+
+                    }
                     }
                 >
 

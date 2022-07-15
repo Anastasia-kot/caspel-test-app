@@ -32,6 +32,8 @@ const MainContent = (props) => {
             totalCount={props.totalCount}
             sortingData={props.sortingData}
             setFilteredData={props.setFilteredData}
+            setCurrentPage={props.setCurrentPage}
+
             />
     
 

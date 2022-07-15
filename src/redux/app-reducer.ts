@@ -2849,7 +2849,7 @@ const appReducer = (state = initialState, action: ActionTypes): InitialStateType
             };
 
          case SORT_DATA:
-            let myarray = [...state.data];
+            let myarray = [...state.dataForSearch];
             if (state.lastSort === action.sortingParameter) {
                 myarray.reverse();
             } else {
@@ -2861,7 +2861,7 @@ const appReducer = (state = initialState, action: ActionTypes): InitialStateType
                 }
              }
              return {
-                 ...state, data: [...myarray], lastSort: action.sortingParameter
+                 ...state, dataForSearch: [...myarray], lastSort: action.sortingParameter
              };
 
 
@@ -2871,20 +2871,15 @@ const appReducer = (state = initialState, action: ActionTypes): InitialStateType
              let dataItem: any = {};
                 for (let i = 0; i < state.data.length; i++) {
                    
-                    Object.values(state.data[i]).forEach(
-                        (item, index, array) => { 
-                            if (item.includes(action.keyWord)) {
-                                dataItem = state.data[i];
-                                filteredData.push(dataItem);
-                                return;
+                    let arr = Object.values(state.data[i]);
+                    let result = arr.map((item, i) => item.indexOf(action.keyWord) >= 0 ? i : -1).filter(item => item >= 0);
+                    if (result.length > 0) {
+                        dataItem = state.data[i];
+                        filteredData.push(dataItem);
+                    }
 
-                             } 
-                        }
-                    )  
                 }
             
-             
-
              return {
                  ...state, dataForSearch: filteredData, totalCount: filteredData.length
              };
